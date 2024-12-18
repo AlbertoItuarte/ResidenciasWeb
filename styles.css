@@ -1,0 +1,163 @@
+/* Agregar estos estilos al inicio del archivo */
+.alert {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.alert-error {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+/* ... resto de los estilos existentes ... */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.contenedor-principal {
+  display: flex;
+  background-color: #000826;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.contenedor-secundario {
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.contenedor-secundario.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Imagen */
+.contenedor-img {
+  display: flex;
+  width: 50%;
+}
+
+.contenedor-img.start {
+  justify-content: start;
+}
+
+.contenedor-img.end {
+  justify-content: end;
+}
+
+.imagen {
+  width: 50%;
+  border-bottom-left-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+.imagen.rotate {
+  transform: rotate(180deg);
+}
+
+/* Formulario */
+.contenedor-formulario {
+  display: flex;
+  width: 50%;
+}
+
+.formulario {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: black;
+  padding: 2rem;
+}
+
+.formulario.rounded-left {
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.formulario.rounded-right {
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.titulo {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: -4rem;
+}
+
+input,
+button {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: none;
+  margin-left: 2.5rem;
+}
+
+button {
+  cursor: pointer;
+  color: white;
+}
+
+.boton-login {
+  background-color: #001152;
+}
+
+.boton-google {
+  background-color: #59002b;
+}
+
+.boton-facebook {
+  background-color: #0025b4;
+}
+
+.texto {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.acciones {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.separador {
+  display: flex;
+  align-items: center;
+  width: 66%;
+}
+
+.linea {
+  flex: 1;
+  border: 1px solid #d7d7d7;
+}
+
+.texto-separador {
+  color: white;
+  margin: 0 0.5rem;
+}
